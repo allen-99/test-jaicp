@@ -7,12 +7,21 @@ theme: /
         a: Начнём.
 
     state: Hello
-        intent!: /привет
-        a: Привет привет
+        q!: $regex</hello>
+        intent!: /hello
+        a: hello
 
-    state: Bye
-        intent!: /пока
-        a: Пока пока
+    state: weather
+        q!: $regex</weather>
+        intent!: /weather
+        a: weather
+        intent: /weather || toState = "./"
+
+    state: currency
+        q!: $regex</currency>
+        intent!: /currency
+        a: currency
+        intent: /currency || toState = "./"
 
     state: NoMatch
         event!: noMatch
