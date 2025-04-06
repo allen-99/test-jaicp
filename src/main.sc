@@ -10,7 +10,7 @@ theme: /
         q!: $regex</hello>
         q: $regex<.*привет.*$>
         q: $regex<.*здравствуй.*$>
-        intent!: /hello
+        intent!: /Hello
         a: hello
 
     state: weather
