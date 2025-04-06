@@ -13,9 +13,10 @@ theme: /
 
     state: weather
         q!: $regex</weather>
+        q: $regex<.*дожд.*$>
+        q: $regex<.*погод.*$>
         intent!: /weather
         a: weather
-        intent: /weather || toState = "./"
 
     state: currency
         q!: $regex</currency>
@@ -26,7 +27,3 @@ theme: /
     state: NoMatch
         event!: noMatch
         a: Я не понял. Вы сказали: {{$request.query}}
-
-    state: Match
-        event!: match
-        a: {{$context.intent.answer}}

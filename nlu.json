@@ -66,10 +66,13 @@
     "shared" : false,
     "phrases" : [ {
       "text" : "weather"
+    }, {
+      "text" : "Weather"
     } ],
     "classificationRules" : {
       "refs" : [ ]
     },
+    "patterns" : [ "weather" ],
     "priority" : 0
   }, {
     "path" : "/currency",
@@ -77,10 +80,39 @@
     "shared" : false,
     "phrases" : [ {
       "text" : "currency"
+    }, {
+      "text" : "Currency"
+    }, {
+      "text" : "@currency"
     } ],
     "classificationRules" : {
       "refs" : [ ]
     },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/погода",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "погода"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
+    "priority" : 0
+  }, {
+    "path" : "/дождь",
+    "enabled" : true,
+    "shared" : false,
+    "phrases" : [ {
+      "text" : "дождь"
+    } ],
+    "classificationRules" : {
+      "refs" : [ ]
+    },
+    "patterns" : [ ],
     "priority" : 0
   } ],
   "entities" : [ ],
