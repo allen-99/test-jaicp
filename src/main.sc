@@ -9,23 +9,12 @@ theme: /
     state: Hello
         q!: $regex</hello>
         q: $regex<.*здравствуй.*$>
-        q: $regex<.*паровоз.*$>
+        q: $regex<.*привет.*$>
         intent!: /Hello
         a: hello
-
-    state: weather
-        q!: $regex</weather>
-        q: $regex<.*дожд.*$>
-        q: $regex<.*погод.*$>
-        intent!: /weather
-        a: weather
-
-    state: currency
-        q!: $regex</currency>
-        intent!: /currency
-        a: currency
-        intent: /currency || toState = "./"
+        
 
     state: NoMatch
         event!: noMatch
+        intent!: /NoMacth
         a: Я не понял. Вы сказали: {{$request.query}}
