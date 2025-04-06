@@ -8,6 +8,8 @@ theme: /
 
     state: Hello
         q!: $regex</hello>
+        q: $regex<.*привет.*$>
+        q: $regex<.*здравствуй.*$>
         intent!: /hello
         a: hello
 
